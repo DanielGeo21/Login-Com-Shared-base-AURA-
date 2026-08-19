@@ -21,7 +21,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     EditText nome;
     EditText email;
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         initComponents(); // iniciar os componentes
         cadastrar.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (validarDados()) {
                     if (lembrarCredenciais.isChecked()) {
-                        preferences = (SharedPreferences) getSharedPreferences("cadastro", 0); // nome do arquivo, modo privado
+                        preferences = (SharedPreferences) getSharedPreferences("login", 0); // nome do arquivo, modo privado
                         SharedPreferences.Editor dados =  preferences.edit();
                         dados.putString("Nome", nome.getText().toString() );
                         dados.putString("Email", email.getText().toString() );
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 email.setText("");
                 senha.setText("");
 
-                Intent intent = new Intent(MainActivity.this, HomeActivity.class); // ir para a tela home
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class); // ir para a tela Cadastro
                 startActivity(intent);
             }
         });

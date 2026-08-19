@@ -7,14 +7,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="50dp"
-        android:text="Cadastro"
+        android:text="Login"
         android:textSize="50sp"
         android:textColor="@color/white"
         android:textStyle="bold" />
@@ -26,9 +26,8 @@
         android:padding="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:background="@drawable/borda"
-        android:maxLength="29"
         android:textColorHint="@color/white"/>
 
     <EditText android:id="@+id/edt_email"
@@ -39,9 +38,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="20dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textColorHint="@color/white"
-        android:maxLength="29"
         android:background="@drawable/borda"/>
 
     <EditText android:id="@+id/edt_senha"
@@ -52,10 +50,9 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="20dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textColorHint="@color/white"
         android:background="@drawable/borda"
-        android:maxLength="29"
         android:inputType="textPassword" />
 
     <LinearLayout
@@ -64,11 +61,11 @@
         android:gravity="center"
         android:layout_marginTop="20dp">
 
-        <Button android:id="@+id/btn_voltar"
+        <Button android:id="@+id/btn_entrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
-            android:text="Voltar"
+            android:text="Entrar"
             android:padding="15dp"
             android:backgroundTint="#B1970F"
             android:textStyle="bold"
@@ -85,7 +82,7 @@
 
     </LinearLayout>
 
-    <CheckBox android:id="@+id/checkbox_lembrar"
+    <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Lembrar minhas Credênciais"
@@ -94,7 +91,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginStart="10dp"/>
 
-        
+
 
 
 
