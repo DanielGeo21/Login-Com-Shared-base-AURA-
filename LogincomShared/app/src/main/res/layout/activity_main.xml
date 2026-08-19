@@ -28,8 +28,12 @@
         android:layout_marginEnd="10dp"
         android:textColor="@color/white"
         android:background="@drawable/borda"
+<<<<<<< HEAD
         android:maxLength="29"
         android:textColorHint="@color/white"/>
+=======
+        android:textColorHint="#787878"/>
+>>>>>>> a23e7d8ccf3d2912460722dd89f9ef9017fa7342
 
     <EditText android:id="@+id/edt_email"
         android:layout_width="match_parent"
@@ -40,8 +44,12 @@
         android:layout_marginEnd="10dp"
         android:layout_marginTop="20dp"
         android:textColor="@color/white"
+<<<<<<< HEAD
         android:textColorHint="@color/white"
         android:maxLength="29"
+=======
+        android:textColorHint="#787878"
+>>>>>>> a23e7d8ccf3d2912460722dd89f9ef9017fa7342
         android:background="@drawable/borda"/>
 
     <EditText android:id="@+id/edt_senha"
@@ -53,7 +61,11 @@
         android:layout_marginEnd="10dp"
         android:layout_marginTop="20dp"
         android:textColor="@color/white"
+<<<<<<< HEAD
         android:textColorHint="@color/white"
+=======
+        android:textColorHint="#787878"
+>>>>>>> a23e7d8ccf3d2912460722dd89f9ef9017fa7342
         android:background="@drawable/borda"
         android:maxLength="29"
         android:inputType="textPassword" />

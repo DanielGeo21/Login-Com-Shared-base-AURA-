@@ -2,3 +2,6 @@
 plugins {
     alias(libs.plugins.android.application) apply false
 }
+dependencies {
+    implementation("androidx.core:core-splashscreen:1.0.1")
+}
